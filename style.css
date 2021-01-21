@@ -6,17 +6,17 @@ body{
 
 main{
    /*background-color:  black;*/
-   width: 1000px;
+   width: 950px;
    margin: auto;
 }
 
 h1, p, nav, h2{
-    width: 900px;
+    width: 850px;
     margin: auto;
 }
 
 h1{
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 25px;
     font-size: 50px;
     text-transform: uppercase;
@@ -63,13 +63,23 @@ img{
 
 .homebutton{
     position: absolute;
-    right:75px;
-    top: 100px;
+    left:7.5vw;
+    top: 2.5vh;
 }
 
 .homebutton img{
     height: 65px;
     width: 65px;
+}
+
+.closebutton{
+    position: absolute;
+    right:6vw;
+    top: 3vh;
+}
+.closebutton img{
+    height: 40px;
+    width: 40px;
 }
 
 nav{
@@ -109,8 +119,25 @@ footer img{
 .pstart1{
     padding-top: 40vh;
     font-size: 7vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .pstart2{
     padding-top: 7vh;
     font-size: 12vh;
+    animation: pulse 10s infinite;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+  
+  @keyframes pulse {
+    0% {
+      color: blanchedalmond;
+    }
+    50% {
+      color: #FF554A;
+    }
+    100% {
+        color: blanchedalmond;
+      }
+  }
